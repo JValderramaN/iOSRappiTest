@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB2CB47F1D96C6DB005370FA"
+               BuildableName = "iOSRappiTest.app"
+               BlueprintName = "iOSRappiTest"
+               ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB2CB4931D96C6DB005370FA"
+               BuildableName = "iOSRappiTestTests.xctest"
+               BlueprintName = "iOSRappiTestTests"
+               ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AB2CB49E1D96C6DB005370FA"
+               BuildableName = "iOSRappiTestUITests.xctest"
+               BlueprintName = "iOSRappiTestUITests"
+               ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AB2CB47F1D96C6DB005370FA"
+            BuildableName = "iOSRappiTest.app"
+            BlueprintName = "iOSRappiTest"
+            ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AB2CB47F1D96C6DB005370FA"
+            BuildableName = "iOSRappiTest.app"
+            BlueprintName = "iOSRappiTest"
+            ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AB2CB47F1D96C6DB005370FA"
+            BuildableName = "iOSRappiTest.app"
+            BlueprintName = "iOSRappiTest"
+            ReferencedContainer = "container:iOSRappiTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
