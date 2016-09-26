@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gNi-lK-8lZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Categories View Controller-->
+        <scene sceneID="F3N-dE-1w8">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesViewController" id="gNi-lK-8lZ" customClass="CategoriesViewController" customModule="iOSRappiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h8C-Rl-vDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="YiE-Lu-kRV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uV6-N7-zaA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOD-0m-mdE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jOD-0m-mdE" secondAttribute="trailing" id="0qA-7n-HWZ"/>
+                            <constraint firstItem="jOD-0m-mdE" firstAttribute="leading" secondItem="uV6-N7-zaA" secondAttribute="leading" id="RaX-Wl-aMi"/>
+                            <constraint firstItem="jOD-0m-mdE" firstAttribute="top" secondItem="uV6-N7-zaA" secondAttribute="top" id="l5k-Nx-AWh"/>
+                            <constraint firstItem="YiE-Lu-kRV" firstAttribute="top" secondItem="jOD-0m-mdE" secondAttribute="bottom" id="ruh-OP-Wt3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="jOD-0m-mdE" id="ccS-Mf-SXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTI-iq-U2y" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="344"/>
+        </scene>
+        <!--Categories Table View Controller-->
+        <scene sceneID="KAY-h5-0GL">
+            <objects>
+                <tableViewController storyboardIdentifier="CategoriesTableViewController" id="mtq-a7-SL6" customClass="CategoriesTableViewController" customModule="iOSRappiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LIE-sR-q78">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="mtq-a7-SL6" id="KMZ-6m-6jo"/>
+                            <outlet property="delegate" destination="mtq-a7-SL6" id="2rw-Bh-O35"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fs7-qn-fzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.75" y="344"/>
+        </scene>
+        <!--Categories Collection View Controller-->
+        <scene sceneID="4rj-Oc-Dfm">
+            <objects>
+                <collectionViewController storyboardIdentifier="CategoriesCollectionViewController" id="zeb-xb-fCx" customClass="CategoriesCollectionViewController" customModule="iOSRappiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="18n-bw-Aen">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0N-x7-ja3">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="zeb-xb-fCx" id="8Rb-42-5Hg"/>
+                            <outlet property="delegate" destination="zeb-xb-fCx" id="eVe-OI-mNb"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uK8-Od-kwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.25" y="344"/>
+        </scene>
+    </scenes>
+</document>

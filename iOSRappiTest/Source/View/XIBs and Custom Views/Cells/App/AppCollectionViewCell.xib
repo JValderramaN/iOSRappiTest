@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="appCollectionViewCell" id="gTV-IL-0wX" customClass="AppCollectionViewCell" customModule="iOSRappiTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="189" height="140"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eba-Pf-RJ5">
+                        <rect key="frame" x="18" y="10" width="151" height="120"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.92156862745098034" green="0.20784313725490194" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="eba-Pf-RJ5" secondAttribute="trailing" constant="10" id="NQb-9n-0FP"/>
+                <constraint firstItem="eba-Pf-RJ5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="SHI-kh-b3h"/>
+                <constraint firstAttribute="bottom" secondItem="eba-Pf-RJ5" secondAttribute="bottom" constant="10" id="jsm-Mv-92r"/>
+                <constraint firstItem="eba-Pf-RJ5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mOB-sw-PJg"/>
+                <constraint firstItem="eba-Pf-RJ5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" constant="10" id="mU3-Wt-Egu"/>
+                <constraint firstItem="eba-Pf-RJ5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="vim-CN-oC6"/>
+            </constraints>
+            <size key="customSize" width="189" height="140"/>
+            <connections>
+                <outlet property="nameLabel" destination="eba-Pf-RJ5" id="Syo-id-cg3"/>
+            </connections>
+            <point key="canvasLocation" x="214.5" y="378"/>
+        </collectionViewCell>
+    </objects>
+</document>
